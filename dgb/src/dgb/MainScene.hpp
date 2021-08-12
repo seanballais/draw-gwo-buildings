@@ -1,9 +1,6 @@
 #ifndef DGB_MAIN_SCENE_HPP
 #define DGB_MAIN_SCENE_HPP
 
-#include <EASTL/vector.h>
-#include <entt/entt.hpp>
-
 #include <corex/core/AssetManager.hpp>
 #include <corex/core/Camera.hpp>
 #include <corex/core/Scene.hpp>
@@ -32,8 +29,6 @@ namespace dgb
     corex::core::Vec2 boundaryDims;
     float drawScale;
     eastl::vector<BuildingData> buildingData;
-    eastl::vector<entt::entity> buildingEntities;
-    entt::entity boundaryEntity;
   };
 }
 
