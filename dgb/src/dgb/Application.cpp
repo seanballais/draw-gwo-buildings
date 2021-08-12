@@ -6,24 +6,24 @@
 #include <corex/core/Application.hpp>
 #include <corex/core/Scene.hpp>
 
-#include <bpt/Application.hpp>
-#include <bpt/MainScene.hpp>
+#include <dgb/Application.hpp>
+#include <dgb/MainScene.hpp>
 
-namespace bpt
+namespace dgb
 {
   Application::Application(const eastl::string& windowTitle)
     : corex::core::Application(windowTitle) {}
 
   void Application::init()
   {
-    std::cout << "Initializing BPT... Bleep, bloop, bleep." << std::endl;
-    auto& mainScene = this->sceneManager->addScene<bpt::MainScene>();
+    std::cout << "Initializing DGB... Bleep, bloop, bleep." << std::endl;
+    auto& mainScene = this->sceneManager->addScene<dgb::MainScene>();
     this->sceneManager->setRootScene(mainScene);
   }
 
   void Application::dispose()
   {
-    std::cout << "Disposing BPT... Bleep, bloop, zzzzz." << std::endl;
+    std::cout << "Disposing DGB... Bleep, bloop, zzzzz." << std::endl;
   }
 }
 
@@ -31,7 +31,7 @@ namespace corex
 {
   eastl::unique_ptr<corex::core::Application> createApplication()
   {
-    return eastl::make_unique<bpt::Application>(
-      "BPT, the undergraduate thesis of Sean Ballais");
+    return eastl::make_unique<dgb::Application>(
+      "Draw GWO Buildings");
   }
 }

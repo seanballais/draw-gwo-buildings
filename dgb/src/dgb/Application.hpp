@@ -1,11 +1,11 @@
-#ifndef BPT_APPLICATION_HPP
-#define BPT_APPLICATION_HPP
+#ifndef DGB_APPLICATION_HPP
+#define DGB_APPLICATION_HPP
 
 #include <EASTL/string.h>
 
 #include <corex/core/Application.hpp>
 
-namespace bpt
+namespace dgb
 {
   class Application : public corex::core::Application
   {

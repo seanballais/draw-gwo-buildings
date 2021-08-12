@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(bpt)
+project(dgb)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
@@ -29,9 +29,9 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/pcg-cpp/include)
 
 add_subdirectory(libs/)
 add_subdirectory(corex/)
-add_subdirectory(bpt/)
+add_subdirectory(dgb/)
 
-target_link_libraries(bpt
+target_link_libraries(dgb
     iprof
     corex-core
     imgui-impls
